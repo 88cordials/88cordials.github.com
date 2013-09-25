@@ -1,10 +1,14 @@
+<!DOCTYPE html>
+
 <html>
 <head>
 
 		<title>88Cordials {{Friendly People.Friendly Apps}}</title>
 
- <link rel="stylesheet" href="css/style.css">
- <link rel="stylesheet" href="css/modal.css">
+ <link rel="stylesheet" href="css/style.css" />
+ <link rel="stylesheet" href="css/modal.css" />
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+ <script src="scripts/scroll.js"></script>
 
 
 </head>
@@ -17,30 +21,30 @@
 				<img src="image/logo.png"></img>
 			</div>
 			<div class="container_navbar">
-				<a  href="#tech" >Technology Expertise</a>
-				<a  href="#clients" >Clients</a>
-				<a  href="#aboutus" >About Us</a>
-				<a  href="#openModal">Contact Us</a> 
+				<a class="nav-btn"  href="#tech" >Technology Expertise</a>
+				<a class="nav-btn"  href="#clients" >Clients</a>
+				<a class="nav-btn"  href="#aboutus" >About Us</a>
+				<a  href="#openModal">Contact Us</a>
 				<div id="openModal" class="modalDialog">
 									<div>
 										<a href="#close" title="Close" class="close">X</a>
-										<h2><center>Contact Us</h2>
+										<h2>Contact Us</h2>
 										<p><img src="image/mail.png" class></img> info@88cordials.com</p>
 										<p><img src="image/phone.png" width="20" height="20"></img>+91-9739270425</p>
 									</div>
 				</div>
 
 
-				
-				
-			</div>	
+
+
+			</div>
 
 		</div>
-	
-	
-	
+
+
+
 		<div class="container_topbar">
-			
+
 				<div class="container_topbar_heading">
 					<div class="topbar_heading"><img src="image/web.png"></img>WEB SOLUTIONS</div>
 					<div class="topbar_heading"><img src="image/cloud.png"></img>CLOUD OFFERINGS</div>
@@ -57,15 +61,15 @@
 		<div class="container_caption" id="tech">Creating Technology driven Experiences to happy users.</div>
 
 		<div class="container_separator"><img src="image/separator.png"></img></div>
-		
+
 		<div class="container_technology">TECHNOLOGY EXPERTISE
 			<div class="container_technology_images">
-				
+
 					<div class="container_technology_image"><img src="image/tech_1.png"></img></div>
 					<div class="container_technology_image"><img src="image/tech_2.png"></img></div>
 					<div class="container_technology_image"><img src="image/tech_3.png"></img></div>
 					<div class="container_technology_image"><img src="image/tech_4.png"></img></div>
-					<div class="container_technology_image"><img src="image/tech_5.png"></img></div><br>	
+					<div class="container_technology_image"><img src="image/tech_5.png"></img></div><br>
 					<div class="container_technology_image"><img src="image/tech_6.png"></img></div>
 					<div class="container_technology_image"><img src="image/tech_7.png"></img></div>
 					<div class="container_technology_image"><img src="image/tech_8.png"></img></div>
@@ -78,36 +82,36 @@
 
 
 		</div>
-		
+
 	<div class="container_separator" id="clients"><img src="image/separator.png"></img></div>
 
 		<div class="container_client" >CLIENTS WE WORKED WITH
 			<div class="container_client_images">
-				
+
 					<div class="container_client_image"><img src="image/client_1.png"></img></div>
 					<div class="container_client_image"><img src="image/client_2.png"></img></div>
 					<div class="container_client_image"><img src="image/client_3.png"></img></div>
 					<div class="container_client_image"><img src="image/client_4.png"></img></div><br>
-					<div class="container_client_image"><img src="image/client_5.png"></img></div>	
+					<div class="container_client_image"><img src="image/client_5.png"></img></div>
 					<div class="container_client_image"><img src="image/client_6.png"></img></div>
 					<div class="container_client_image"><img src="image/client_7.png"></img></div>
 					<div class="container_client_image"><img src="image/client_8.png"></img></div>
 			</div>
-			
+
 		</div>
 
  	<div class="container_separator"id="aboutus" ><img src="image/separator.png"></img></div>
-	
+
 
 		<div class="container_aboutus" >ABOUT US
 			<div class="container_aboutus_images" >
-				
+
 					<div class="container_aboutus_image"><img src="image/aboutus_1.png"></img></div>
 					<div class="container_aboutus_image"><img src="image/aboutus_2.png"></img></div>
 					<div class="container_aboutus_image"><img src="image/aboutus_3.png"></img></div>
 					<div class="container_aboutus_image"><img src="image/aboutus_4.png"></img></div>
 			</div>
-			
+
 			<div class="container_aboutus_text">
 					<div class="aboutus_text">We are smart group of people from the best technology institutes in India</div>
 					<div class="aboutus_text">We love technology, design food, in that particular order and often attend many conferences on it.</div>
@@ -117,15 +121,46 @@
 			</div>
 			<div class="container_separator" ><img src="image/separator.png"></img></div>
 		</div>
-		
+
 		<div class="container_footer">
 			<a>Friendly People.Friendly Apps.</a>
 			<br>
 			&copy 88 Cordials Digital Technologies LLP, Bangalore 2013
 		</div>
 	</div>
-		
+
 </div>
 
+<script type="text/javascript">
+
+$(function(){
+
+
+
+
+
+	$(".nav-btn").click(function() {
+		console.log("AAAA");
+		var target=$(this).attr('href');
+		console.log(target);
+		$().scrollTo( this.hash || 0, 3000);
+		return false;
+	    // $('html, body').animate({
+	    //     scrollTop: $(target).offset().top
+	    // }, 2000);
+	    // return false;
+	});
+
+});
+
+</script>
+
+
+
 </body>
+
+
+
+
+
 </html>
