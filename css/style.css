@@ -3,8 +3,7 @@ img {
 	
 	width:auto;
 	height:auto;
-
-   vertical-align: middle;
+    vertical-align: middle;
     max-width: 100%;
 
 }
@@ -24,13 +23,15 @@ img {
 	margin:0 auto;
 	padding: 0px;
 	background-color: #ffffff;
-	overflow-x:hidden;
+	
 
 }
 .container_header{
 	position:fixed;
 	height:20%;
 	width:100%;
+	top:0;
+	left:0;
 	padding: 0px;
 	border-top: 10px solid #fe7159;
 	z-index: 3;
@@ -69,7 +70,7 @@ img {
 
 .container_topbar{
 	position:relative;
-	top:30%;
+	top:190px;
 	margin:0 auto;
 	height:50%;
 	width:100%;
@@ -303,7 +304,7 @@ img {
 	width:24%;	
 	color:#d9d9d9;
 	font-size: 19px;
-	height:120px;
+	height:130px;
 
 }
 

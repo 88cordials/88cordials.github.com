@@ -16,16 +16,14 @@
 </head>
 
 <body>
-
-	<div class="container_website">
-		<div class="container_header">
+	<div class="container_header">
 			<div class="container_logo">
 				<img alt="image" src="image/logo.png">
 			</div>
 			<div class="container_navbar">
-				<a class="nav-btn"  href="#tech" >Technology Expertise</a>
-				<a class="nav-btn"  href="#clients" >Clients</a>
-				<a class="nav-btn"  href="#aboutus" >About Us</a>
+				<a class="nav"  href="#tech" >Technology Expertise</a>
+				<a class="nav"  href="#clients" >Clients</a>
+				<a class="nav"  href="#aboutus" >About Us</a>
 				<a  href="#openModal">Contact Us</a>
 				<div id="openModal" class="modalDialog">
 									<div>
@@ -42,6 +40,9 @@
 			</div>
 
 		</div>
+
+	<div class="container_website">
+		
 
 
 
@@ -134,28 +135,22 @@
 
 <script type="text/javascript">
 
+
+
+
 $(function(){
+	$(".nav").click(function() {
+		
 
 
+                $('html, body').animate({
+             scrollTop: $($(this).attr('href')).offset().top
+         }, 1000);
+               
 
-
-
-	// $(".nav-btn").click(function() {
-
-
-	// 	$('html, body').animate({
- //             scrollTop: $($(this).attr('href')).offset().top
- //         }, 3000);
- //         return false;
-
-	//     // $('html, body').animate({
-	//     //     scrollTop: $(target).offset().top
-	//     // }, 2000);
-	//     // return false;
-	// });
-
+         return false;
+	});
 });
-
 </script>
 
 
