@@ -328,6 +328,8 @@ img {
 	display:inline-block;
 	text-align:center;
 	position: relative;
+
+	vertical-align: top;
 		
 	width:24%;	
 	color:#d9d9d9;
@@ -336,9 +338,9 @@ img {
 
 }
 .aboutus_text p{
-	line-height: 1em;
+	line-height: 2em;
 	max-height: 8em;
-	font-size: 19px;
+	font-size: 18px;
 
 
 
