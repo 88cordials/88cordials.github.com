@@ -283,7 +283,7 @@ img {
 	font-size: 30px;	top:10%;
 	text-align: left;
 
-	
+	height:55%;
 	width:95%;
 	padding: 0px;
 	color:#fc6e5a;
@@ -314,7 +314,7 @@ img {
 .container_aboutus_text{
 	
 	width:100%;
-	
+	height:150px;
 		
 	
 	
@@ -336,7 +336,7 @@ img {
 
 }
 .aboutus_text p{
-	line-height: 2em;
+	line-height: 1em;
 	max-height: 8em;
 	font-size: 19px;
 
