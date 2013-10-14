@@ -86,20 +86,24 @@ img {
 	
 	background-color: #f1eef9;	
 
+
 }
 
 .topbar_heading{
+	margin-left: 5%;
 	
 	color:#fe7861;
 	font-style: bold;
 	display:inline-block;
-	text-align:center;
+	
 	position: relative;
 	
 	line-height: 90px;
 	vertical-align: middle;	
 	
-	width:30%;
+	width:25%;
+	height: 90px;
+	
 	
 	color:#fc6e5a;
 
@@ -123,20 +127,22 @@ img {
 
 .container_topbar_text{
 	width:100%;
+	
 		
 	}
 
 
 
 .topbar_text{
+	margin-left:5%;
 	
 	display:inline-block;
 	text-align:left;	
 		
 	width:25%;
 	margin-top:2%;
-	padding-left:4%;
-	padding-right:4%;	
+	
+		
 	color:#b4b4b4;
 	font-size:19px;
 	
@@ -320,7 +326,7 @@ img {
 }
 .aboutus_text{
 	line-height: 2em;
-	max-height: 3em;
+	max-height: 6em;
 	font-size: 19px;
 
 
